@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   res.send("Express is running!");
 });
 
+app.get("/welcome", (req, res) => {
+  res.send("Welcome !");
+});
+
 app.listen(PORT, () => {
   console.log(`Server Running on port http://localhost:${PORT}`);
 });
